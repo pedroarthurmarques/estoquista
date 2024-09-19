@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardUseCompatPadding="true">
+
+    <TextView
+            android:id="@+id/textViewLabelTitulo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="20dp"
+            android:text="@string/titulo"
+            android:textColor="@color/colorGrafite"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+            android:id="@+id/editTextTituloLeitura"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="20dp"
+            android:inputType="textShortMessage"
+            android:maxLength="100"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textViewLabelTitulo" />
+
+    <TextView
+            android:id="@+id/textViewLabelModoLeitura"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="20dp"
+            android:text="@string/modo_de_leitura"
+            android:textColor="@color/colorGrafite"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/editTextTituloLeitura" />
+
+    <RadioGroup
+            android:id="@+id/radioGroupModosLeitura"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="20dp"
+            android:orientation="vertical"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textViewLabelModoLeitura">
+
+        <RadioButton
+                android:id="@+id/radioButtonLeituraSequencial"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/modo_sequencial"
+                android:textColor="@color/colorGrafiteAtenuado" />
+
+        <RadioButton
+                android:id="@+id/radioButtonLeituraContagem"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/modo_contagem"
+                android:textColor="@color/colorGrafiteAtenuado" />
+
+    </RadioGroup>
+
+    <Button
+            android:id="@+id/btnSalvarDetalhesColeta"
+            style="@style/Widget.AppCompat.Button.Borderless"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="20dp"
+            android:text="@string/salvar"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/radioGroupModosLeitura" />
+
+    <Button
+            android:id="@+id/btnCancelarDetalhesColeta"
+            style="@style/Widget.AppCompat.Button.Borderless"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="8dp"
+            android:text="@string/cancelar"
+            app:layout_constraintEnd_toStartOf="@+id/btnSalvarDetalhesColeta"
+            app:layout_constraintTop_toBottomOf="@+id/radioGroupModosLeitura" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

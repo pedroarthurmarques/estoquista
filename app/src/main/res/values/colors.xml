@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#1397d5</color>
+    <color name="colorPrimaryDark">#1387BE</color>
+    <color name="colorAccent">#30B4F2</color>
+    <color name="colorGrafite">#3C3C3C</color>
+    <color name="colorGrafiteAtenuado">#646464</color>
+    <color name="cinzaFraco">#DAD9D9</color>
+    <color name="cinzaSuave">#F9F9F9</color>
+    <color name="colorBranco">#FFFFFF</color>
+    <color name="colorPreco">#2EB637</color>
+    <color name="colorFundoFraco">#FBFBFB</color>
+    <color name="colorLaranja">#F46F2D</color>
+    <color name="colorAmarelo">#FFEB3B</color>
+    <color name="colorAmareloEscuro">#E98B00</color>
+    <color name="colorVermelho">#E22F2F</color>
+    <color name="colorVermelhoAtenuado">#E74C4C</color>
+
+    <color name="transparente">#00FFFFFF</color>
+    <color name="lightTransparent">#16000000</color>
+    <color name="redOverlay">#33E74C4C</color>
+    <color name="yellowOverlay">#33FFEB3B</color>
+    <color name="grayOverlay">#44DAD9D9</color>
+</resources>
